@@ -1,0 +1,16 @@
+.footer {
+    background-color: $dark;
+    color: $white;
+    bottom: 0;
+    &__ul {
+        align-content: center;
+        justify-content: center
+    }
+    &__ul-social {
+        @include flex;
+        justify-items: center;
+    }
+    &__social {
+        list-style: none;
+    }
+}

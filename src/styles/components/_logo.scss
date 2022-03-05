@@ -1,0 +1,10 @@
+.logo {
+    text-decoration: none;
+    font-size: 30px;
+    color: $text-color;
+    margin: 20px;
+    font-weight: 600;
+    @include responsive(768px) {
+        font-size: 25px;
+    }
+}

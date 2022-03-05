@@ -1,0 +1,28 @@
+.navbarauth {
+    @include flexSpaceBetween;
+    height: 4rem;
+    border-bottom: 1px solid;
+    position: fixed;
+    width: 100%;
+    background-color: $white;
+
+    &__items {
+        display: flex;
+        margin: 20px;
+        
+    }
+    &__lists {
+        list-style: none;
+        padding-left: 30px;
+        @include responsive(360px) {
+            padding-left: 0px;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        padding: 10px 20px;
+        font-weight: 400;
+        color: $text-color;
+
+    }
+}

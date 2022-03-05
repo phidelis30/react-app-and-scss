@@ -1,0 +1,22 @@
+.container {
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+    padding: 0 10px;
+    @include responsive(765px) {
+      width: 100%;
+      padding: 0 10px;
+    }
+  }
+.bgColorDark {
+  background-color: $dark;
+  color: $white;
+  height: 100%;
+}
+.bgGlobaldark {
+  color: #fff;
+  background-color: $dark;
+}
+.bgColor {
+  color: #697477;
+}

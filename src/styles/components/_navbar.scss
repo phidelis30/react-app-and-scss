@@ -1,0 +1,107 @@
+.nav {
+    @include flexSpaceBetween;
+    background-color: $white;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid;
+    height: 4rem;
+    z-index: 200;
+}
+.navbar {
+    @include flexSpaceBetween;
+    // background-color: $primary;
+    height: 100%;
+    width: 100%;
+
+    &__right {
+        display: flex;
+        @include responsive(765px) {
+            justify-content: space-around;
+            width: 100%;
+            border-top: 1px solid;
+            position: fixed;
+            bottom: 0;
+            padding: 5px;
+            background-color: $dark;
+            color: $white;
+        }
+    }
+
+    &__left {
+        display: flex;
+        margin-left: 30px;
+        @include responsive(765px) {
+            margin-left: 10px;
+        }
+    }
+    
+    &__items {
+        display: flex;
+        
+    }
+    &__lists {
+        list-style: none;
+        padding: 5px 10px;
+        @include responsive(765px) {
+            padding: 5px 15px;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        padding: 5px 10px;
+        font-size: 25px;
+        font-weight: 300;
+        color: $text-color;
+        @include responsive(765px) {
+            padding-top: 20px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin: 0px;
+        }
+        
+    }
+    &__btn {
+        text-align: center;
+        border: none;
+        padding: 10px;
+        font-size: 30px;
+        font-weight: 300;
+        color: $text-color;
+        background-color: transparent;
+        border-left: 2px solid;
+        margin: 30px;
+        cursor: pointer;
+        @include responsive(360px) {
+            border-left: none;
+            margin-right: 5px;
+        }
+    }
+    &__search {
+        opacity: 1;
+        flex-grow: 1;
+        max-width: 280px;
+        position: relative;
+        &__input {
+            width: 250px;
+            outline: none;
+            padding:  0 8px 0 40px;
+            line-height: 1.75;
+            height: 34px;
+            vertical-align: text-top;
+            font-weight: 400;
+            font-size: 15px;
+            @include responsive(765px) {
+                width: 100%;
+            }
+        }
+        &__icon {
+            width: 40px;
+            position: absolute;
+            z-index: 1;
+            top: 10px;
+            left: 2px;
+            color: $text-color;
+        }
+    }
+}
